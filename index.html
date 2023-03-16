@@ -11,6 +11,7 @@
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
 </style>
 <script>
+function myFunction() {
 var form = document.getElementById("myForm");
 var limit = 20;
 form.addEventListener("submit", function(event){
@@ -28,6 +29,7 @@ if (limit < 21) {
 	} 
 	else {
   alert("Limit is Over");
+}
 }
 </script>
 
@@ -81,7 +83,7 @@ if (limit < 21) {
           </div>
         
           <div class="w3-row-padding" style="margin:8px -16px;"><p>
-        <button class="w3-button w3-dark-grey" type="submit"><i class="	fa fa-send"></i>   Get Appointment</button></p>
+        <button class="w3-button w3-dark-grey" onclick="myFunction()" type="submit"><i class="	fa fa-send"></i>   Get Appointment</button></p>
       </form>
     </div>
   </div>
