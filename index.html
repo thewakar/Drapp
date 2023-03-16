@@ -22,14 +22,12 @@ var DT = document.getElementById("PTphone").value;
 var DT = document.getElementById("PTemail").value;
 
 if(limt > 30) {
-
-var xhr = new XMLHttpRequest();
-xhr.open('GET',http://thewakar.github.io/Drapp/api?date=' + date + '&DT=' + DT +'&PTname=' + PTname + 'PTphone=' + PTphone + '&PTemail=' + PTemail);
-xhr.send();
-}
-else
-{
-alert("Limit is Over");
+	var xhr = new XMLHttpRequest();
+	xhr.open('GET',http://thewakar.github.io/Drapp/api?date=' + date + '&DT=' + DT +'&PTname=' + PTname + 'PTphone=' + PTphone + '&PTemail=' + PTemail);
+	xhr.send();
+	} 
+	else {
+  alert("Limit is Over");
 }
 </script>
 
