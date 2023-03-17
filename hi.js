@@ -1,15 +1,10 @@
-var form = document.getElementById("myForm");
-
-form.addEventListener("submit", function(event) {
-  event.preventDefault();
-  var name = document.getElementById("name").value;
-  var age = document.getElementById("age").value;
-  
-  if (name && age) {
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://script.google.com/macros/s/AKfycbwV9_FPYI_0zA9JV4IPQ9xBJi0uT2H81ihu8OlkYGDAyDvo8TttxUPTXo8vr02HNjs/exec?name=' + name + '&age=' + age);
-    xhr.send();
-  } else {
-    alert("Please enter both name and age.");
-  }
-});
+// Submit form with id function.
+function submit_by_id() {
+var name = document.getElementById("name").value;
+var email = document.getElementById("email").value;
+if (validation()) // Calling validation function
+{
+document.getElementById("form_id").submit(); //form submission
+alert(" Name : " + name + " n Email : " + email + " n Form Id : " + document.getElementById("form_id").getAttribute("id") + "nn Form Submitted Successfully......");
+}
+}
