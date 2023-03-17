@@ -53,10 +53,10 @@ var emailReg = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]
 if (name === '' || email === '') {
 alert("Please fill all fields...!!!!!!");
 return false;
-} else if (input.value.match(emailReg)) {
+} else if (email.match(emailReg)) {
+return true;
+} else {
 alert("Invalid Email...!!!!!!");
 return false;
-} else {
-return true;
 }
 }
