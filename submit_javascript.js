@@ -49,11 +49,11 @@ alert(" Name : " + name + " n Email : " + email + " n Form Tag : <form>nn Form S
 function validation() {
 var name = document.getElementById("name").value;
 var email = document.getElementById("email").value;
-var emailReg = /^([w-.]+@([w-]+.)+[w-]{2,4})?$/;
+var emailReg = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 if (name === '' || email === '') {
 alert("Please fill all fields...!!!!!!");
 return false;
-} else if (!(email).match(emailReg)) {
+} else if if (input.value.match(emailReg)) {
 alert("Invalid Email...!!!!!!");
 return false;
 } else {
